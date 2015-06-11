@@ -1,0 +1,249 @@
+		a{
+			text-decoration: none;
+			color: rgb(0, 0, 0);
+		}
+
+		body{
+			font-family: 'Open Sans', sans-serif;
+		}
+
+		a img{
+			width: 42px;
+			margin-top: 15px;
+		}
+
+		.index_main{
+			max-width: 500px;
+			margin: 0 auto; 
+			text-align: center; 
+			font-size: 20px;
+			font-family: 'Roboto', sans-serif;
+		}
+
+		.content_arrow_left img{
+			margin-left: 25px;
+		}
+
+		.content_arrow_left:hover .active_arrow{
+			margin-left: 15px;
+		}
+
+		.element_block{
+			margin-top: 30px;
+		}
+
+		.upvote_block{
+			display: inline-block;
+			vertical-align: top;
+
+			text-align: center;
+
+			border-radius: 3px;
+
+			box-shadow: 0 1px 0 0 rgba(83,69,64,0.3),0 1px 1px 0 rgba(0,0,0,0.2);
+			background: #edeceb;
+  			float: left;
+  			height: 44px;
+  			margin: 0 11px 0 0;
+  			width: 34px
+		}
+
+		.upvote_block .upvote_arrow{
+			display: block;
+  			border-bottom: 12px solid #534540;
+  			border-left: 7px solid transparent;
+  			border-right: 7px solid transparent;
+  			border-top: 7px solid transparent;
+  			position: absolute;
+  			margin-left: 10px;
+		}
+
+		.upvote_block .count{
+
+  			font-weight: 600;
+
+  			color: #534540;
+  			font-size: 16px;
+  			line-height: 16px;
+  			
+  			margin: 23px 0 0;
+		}
+
+		.text{
+			margin-left: 20px;
+		}
+
+		.text .title{
+			font-weight: 600;
+			font-size: 20px;
+			padding-left: 5px;
+			margin: 0;
+		}
+
+		.text .title:hover{
+			text-decoration: underline;
+		}
+
+		.text .description{
+			margin: 0;
+			color: rgb(151, 148, 147);
+		}
+
+		.discus_url .comments_count{
+			color: rgb(131, 128, 127);
+			display: inline-block; 
+			margin: 0; 
+			font-size: 16px;
+
+			vertical-align: top;
+			margin-left: 5px;
+		}
+
+		.discus_url{
+			opacity: 0.6;
+		}
+
+		.discus_url:hover {
+			opacity: 1;
+		}
+
+		.discus_url img{
+			width: 16px; 
+			margin: 0 0 0 10px;
+		}
+
+		.content_block .arrow{
+			height: 450px;
+			width: 80px; 
+			position:absolute;
+			z-index:10;  
+		}
+
+		.content_block .arrow img{
+			height: 46px;
+			margin-top: 193px;
+		}
+
+		.content_arrow_right{
+			right: 0; 
+			top: 0;
+		}
+
+		.content_arrow_right img{
+			margin-right: 25px;
+  			float: right;
+		}
+
+		.content_arrow_right:hover .active_arrow{
+			margin-right: 15px;
+		}
+
+		.content_block .arrow:hover{
+			cursor: pointer;
+		}
+
+		body, html{
+			margin: 0;
+			padding: 0;
+		}
+
+		.slider {
+  			position: relative;
+  			margin: 0 auto;
+  			border-radius: 4px;
+  			overflow: hidden;
+
+  			overflow: hidden; 
+  			z-index:0; 
+  			margin: 0 auto; 
+  			max-width: 960px;
+		}
+
+		.slider .slider_item {
+  			position: relative;
+  			display: block;
+  			float: left;
+  			margin: 0;
+  			padding: 0;
+  			width: 100%;
+		}
+
+		.date_bar_block{
+			border: solid 1px #e7e7e7;
+			
+			margin: 50px auto;
+
+			padding: 0 50px;
+			font-size: 0;
+			white-space: nowrap;
+			overflow: hidden;
+
+			max-width: 700px;
+			margin: 10px auto;
+			position: relative;
+		}
+
+		.date_bar_block li, .date_bar_block a{
+			height: 70px;
+			width: 70px;
+			color: #a2a2a2;
+			text-align: center;
+			display: inline-block;
+			border-right: 1px solid #E7E7E7;
+			box-sizing: border-box;
+			z-index: 0;
+
+			transition: color .2s, transform .2s; 
+			-webkit-transition: color .2s, transform .2s;
+			-moz-transition: color .2s, transform .2s;
+		}
+
+		span.date{
+			display: block;
+			font-size: 30px;
+
+			transition: color .2s, transform .2s;
+			-webkit-transition: color .2s, -webkit-transform .2s;
+			-moz-transition: color .2s, -moz-transform .2s;
+		}
+
+		span.month{
+			font-size: 13px;
+		}
+
+		li.active{
+			color: #686666;
+		}
+
+		li.active > span.date{
+			transform: scale(1.2, 1.2);
+			-moz-transform: scale(1.2, 1.2);
+			-webkit-transform: scale(1.2, 1.2)
+		}
+
+		.date_bar_block li:hover{
+			color: #686666;
+			cursor: pointer;
+		}
+
+		.date_bar_block a.arrow{
+			position: absolute;
+			top: 0;
+			width: 50px;
+			min-width: 0;
+
+			font-size: 30px;
+			line-height: 70px;
+			z-index: 2;
+
+			background-color: white;
+		}
+
+		.date_bar_block a.prev{
+			left: 0;
+		}
+
+		.date_bar_block a.next{
+			right: 0;
+			border-left: solid 1px #e7e7e7;
+		}

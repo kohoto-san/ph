@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+	<title>Time Hunt</title>
+
+    {% load staticfiles %}
+
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="{% static 'style.css' %}" />
+
+
+</head>
+
+<body>
+
+	<div class="content_block" style="height: 450px;">
+
+		<div class="arrow content_arrow_left"> 
+			<img src="{% static 'img/content_arrow_left.png' %}" />
+		</div>
+
+		<div class="slider">
+
+			<div class="slider_item"></div>
+			<div class="slider_item" style="display:none;"></div>
+
+		</div>
+
+		<div class="arrow content_arrow_right"> 
+			<img src="{% static 'img/content_arrow_right.png' %}"/>
+		</div>
+
+	</div>
+
+
+	<div class="date_bar_block">
+
+		<a href="#" class="arrow prev" id="arrow_left">
+			<img src="{% static 'img/left.png' %}" />
+		</a>
+
+		<div id="frame">
+			<ul class="dates_bar" id="dates_bar"> </ul>
+		</div>
+
+		<a href="#" class="arrow next" id="arrow_right">
+			<img src="{% static 'img/right.png' %}" />
+		</a>
+
+	</div>
+
+	<p style="margin-left:50px;"> Hire me! </p>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+	<script src="{% static 'js/sly.min.js' %}"></script>
+	<script src="{% static 'js/script.js' %}"></script>
+
+
+</body>
+</html>
