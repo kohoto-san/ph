@@ -2,6 +2,10 @@ $(document).ready(function(){
 
 		$('.slider').css('width', '100%').css('width', '-=160px');
 
+		$(window).resize(function(){
+			$('.slider').css('width', '100%').css('width', '-=160px');
+		});
+
 		var element_meta = "<div class='element_block'><div class='upvote_block element upvote_e'> <div class='upvote_arrow element upvote_e'></div><div class='count element upvote_e'> 66 </div></div><div class='text'><a href='#' class='title element'> Title </a><a href='#' class='element discus_url'><img src='static/img/comment.png'  /><p class='comments_count'> 22 </p></a><br/><span class='description element opacity_link'> Description </span></div></div>"
 
 		start_date = new Date(2013, 10, 25);
