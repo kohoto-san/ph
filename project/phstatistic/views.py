@@ -54,6 +54,8 @@ def create(request):
             if(length > 5):
                 length = 5
 
+            meta_days = (param_day - start_date).days
+
             while i < length:
 
                 votes_count = text['posts'][i]['votes_count']
@@ -70,7 +72,7 @@ def create(request):
                 i += 1
 
                 p = Product.objects.create(name=name,
-                                           day=days.days,
+                                           day=meta_days,
                                            tagline=tagline,
                                            created_at=created_at,
                                            votes_count=votes_count,
